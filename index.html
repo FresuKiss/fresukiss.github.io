@@ -306,7 +306,7 @@ document.querySelectorAll('[data-pack]').forEach(function(a){
 document.getElementById('f').addEventListener('submit',function(e){
  e.preventDefault();
  var v=Object.fromEntries(new FormData(e.target));
- var t='Hola FresuKiss, quiero cotizar una barra de fresas con crema.\n'
+ var t='Hola FresuKiss, quiero cotizar una barra.\n'
   +'Nombre: '+v.n+'\nEvento: '+v.t+'\nFecha: '+v.d+'\nInvitados: '+v.g
   +'\nPaquete o barra: '+v.p+'\nLugar: '+(v.l||'Por definir')+(v.m?'\nComentarios: '+v.m:'');
  window.open('https://wa.me/528445326757?text='+encodeURIComponent(t),'_blank');
